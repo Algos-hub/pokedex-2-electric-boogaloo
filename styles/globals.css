@@ -1,0 +1,58 @@
+@import url(./theme/tokens.css);
+@import url(./theme/colors.module.css);
+@import url(./theme/typography.module.css);
+@import url(./theme/theme.light.css);
+@import url(./theme/theme.dark.css);
+
+:root {
+  --md-filled-tonal-icon-button-container-width: 60px;
+  --md-filled-tonal-icon-button-container-height: 60px;
+  --md-filled-tonal-icon-button-container-shape: 15px;
+  --md-filled-tonal-icon-button-icon-size: 30px;
+}
+
+html,
+body {
+  background-color: var(--md-sys-color-background);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+  background-color: var(--md-sys-color-primary);
+  color: var(--md-sys-color-inverse-text-neutral);
+}
+
+.css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root {
+  background-color: var(--md-sys-color-surface-variant);
+  color: var(--md-sys-color-text-neutral);
+}
+
+.css-1v2lvtn-MuiPaginationItem-root {
+  color: var(--md-sys-color-text-neutral);
+}
+
+.css-14zdfa7-MuiButtonBase-root-MuiButton-root {
+  padding: 10px;
+  min-width: 0;
+}
+
+.css-14zdfa7-MuiButtonBase-root-MuiButton-root:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+  font-variation-settings: "FILL" 1;
+}
+
+md-icon[filled] {
+  font-variation-settings: "FILL" 1;
+}
+
+md-outlined-button:hover md-icon {
+  font-variation-settings: "FILL" 1;
+}
+
+md-outlined-button {
+  transition: all 0.2s ease-in-out;
+  width: 80%;
+  height: 70.4px;
+}

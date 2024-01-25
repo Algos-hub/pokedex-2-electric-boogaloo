@@ -1,0 +1,63 @@
+.rail {
+  color: white;
+  width: 88px;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s ease-in-out;
+  overflow-x: hidden;
+  z-index: 999;
+}
+
+.navigation {
+  height: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fill, 70px);
+  overflow: hidden;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+.darkBotton {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.searchBar {
+  display: none;
+}
+.searchButton {
+  display: flex;
+}
+.name {
+  display: none;
+}
+.rail:hover {
+  width: 288px;
+  border-radius: 0px 25px 25px 0px;
+  .navigation {
+    width: 85%;
+  }
+  .searchBar {
+    display: block;
+  }
+  .searchButton {
+    display: none;
+  }
+  .name {
+    display: inline-flex;
+    margin-left: 10px;
+    text-overflow: clip;
+  }
+}
+
+@media (max-width: 960px) {
+  .rail {
+    display: none;
+  }
+}

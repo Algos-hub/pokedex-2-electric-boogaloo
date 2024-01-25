@@ -1,0 +1,42 @@
+.pokemon {
+  margin-top: 10px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, 300px);
+  width: 100%;
+  justify-content: center;
+}
+
+.pagination {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.paginationSmall {
+  display: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 88px;
+}
+
+@media (max-width: 960px) {
+  .container {
+    padding-left: 0;
+    padding-top: 90px;
+  }
+}
+
+@media (max-width: 610px) {
+  .paginationSmall {
+    display: flex;
+  }
+  .pagination {
+    display: none;
+  }
+}

@@ -1,0 +1,56 @@
+.grid {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.svg {
+  width: 30px;
+  fill: var(--md-sys-color-text-neutral);
+}
+.svgLast {
+  width: 30px;
+  fill: var(--md-sys-color-text-neutral);
+  grid-column: 6;
+  display: flex;
+}
+
+.firstEvolution {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.secondEvolution {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+}
+
+.lastEvolution {
+  grid-column: 7 / span 2;
+  display: flex;
+}
+
+@media (max-width: 750px) {
+  .grid {
+    grid-auto-flow: column;
+  }
+  /* .lastEvolution {
+    grid-row: 7;
+  } */
+  .svg {
+    transform: rotate(90deg);
+  }
+  .svgLast {
+    transform: rotate(90deg);
+    grid-row: 6;
+    grid-column: unset;
+  }
+  .lastEvolution {
+    display: flex;
+    grid-column: unset;
+    grid-row: 7 / span 2;
+  }
+}
