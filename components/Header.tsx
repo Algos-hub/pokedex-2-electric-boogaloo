@@ -96,7 +96,9 @@ export default function Header(props: Props) {
             onKeyDown={(e) => {
               if (e.key === "Enter")
                 router.push(
-                  "/search" + "?" + createQueryString("search", search)
+                  "/search" +
+                    "?" +
+                    createQueryString("search", search.toLowerCase())
                 );
             }}
           >
@@ -110,7 +112,9 @@ export default function Header(props: Props) {
               slot="leading-icon"
               onClick={() =>
                 router.push(
-                  "/search" + "?" + createQueryString("search", search)
+                  "/search" +
+                    "?" +
+                    createQueryString("search", search.toLowerCase())
                 )
               }
             >

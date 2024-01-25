@@ -75,6 +75,15 @@ export default function NavigationDrawer(props: Props) {
             <h1 style={{ marginLeft: 10 }}>Regions</h1>
           </div>
         </Md3TextButton>
+        <Md3TextButton
+          style={{ height: 55, width: "90%" }}
+          onClick={() => router.push("/types")}
+        >
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <Md3Icon>filter_list</Md3Icon>
+            <h1 style={{ marginLeft: 10 }}>Types</h1>
+          </div>
+        </Md3TextButton>
       </div>
       <div
         style={{
